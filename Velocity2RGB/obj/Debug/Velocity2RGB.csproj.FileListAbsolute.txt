@@ -1,0 +1,14 @@
+C:\GitRepos\Velocity2RGB\Velocity2RGB\bin\Debug\Velocity2RGB.exe.config
+C:\GitRepos\Velocity2RGB\Velocity2RGB\bin\Debug\Velocity2RGB.exe
+C:\GitRepos\Velocity2RGB\Velocity2RGB\bin\Debug\Velocity2RGB.pdb
+C:\GitRepos\Velocity2RGB\Velocity2RGB\obj\Debug\Velocity2RGB.csprojAssemblyReference.cache
+C:\GitRepos\Velocity2RGB\Velocity2RGB\obj\Debug\Converter.baml
+C:\GitRepos\Velocity2RGB\Velocity2RGB\obj\Debug\Converter.g.cs
+C:\GitRepos\Velocity2RGB\Velocity2RGB\obj\Debug\App.g.cs
+C:\GitRepos\Velocity2RGB\Velocity2RGB\obj\Debug\Velocity2RGB_MarkupCompile.cache
+C:\GitRepos\Velocity2RGB\Velocity2RGB\obj\Debug\Velocity2RGB.g.resources
+C:\GitRepos\Velocity2RGB\Velocity2RGB\obj\Debug\Velocity2RGB.Properties.Resources.resources
+C:\GitRepos\Velocity2RGB\Velocity2RGB\obj\Debug\Velocity2RGB.csproj.GenerateResource.cache
+C:\GitRepos\Velocity2RGB\Velocity2RGB\obj\Debug\Velocity2RGB.csproj.CoreCompileInputs.cache
+C:\GitRepos\Velocity2RGB\Velocity2RGB\obj\Debug\Velocity2RGB.exe
+C:\GitRepos\Velocity2RGB\Velocity2RGB\obj\Debug\Velocity2RGB.pdb
