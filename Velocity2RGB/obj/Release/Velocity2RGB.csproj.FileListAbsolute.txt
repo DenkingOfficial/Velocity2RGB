@@ -19,7 +19,6 @@ C:\GitRepos\Velocity2RGB\Velocity2RGB\obj\Release\App.baml
 C:\GitRepos\Velocity2RGB\Velocity2RGB\obj\Release\Velocity2RGB.g.resources
 C:\GitRepos\Velocity2RGB\Velocity2RGB\obj\Release\Velocity2RGB.Properties.Resources.resources
 C:\GitRepos\Velocity2RGB\Velocity2RGB\obj\Release\Velocity2RGB.csproj.GenerateResource.cache
-C:\GitRepos\Velocity2RGB\Velocity2RGB\obj\Release\Velocity2RGB.exe.licenses
 C:\GitRepos\Velocity2RGB\Velocity2RGB\obj\Release\Velocity2RGB.csproj.CoreCompileInputs.cache
 C:\GitRepos\Velocity2RGB\Velocity2RGB\obj\Release\Velocity2RGB.csproj.CopyComplete
 C:\GitRepos\Velocity2RGB\Velocity2RGB\obj\Release\Velocity2RGB.exe

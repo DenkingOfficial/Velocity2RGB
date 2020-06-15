@@ -1,6 +1,8 @@
-﻿using System.Windows;
+﻿using System.IO;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using Microsoft.Win32;
 
 namespace Velocity2RGB
 {
@@ -37,6 +39,33 @@ namespace Velocity2RGB
             Gval.Text = colors.G[index].ToString();
             Bval.Text = colors.B[index].ToString();
             HexVal.Text = "#" + colors.R[index].ToString("X2") + colors.G[index].ToString("X2") + colors.B[index].ToString("X2");
+        }
+
+        private void OpenPaletteButton_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.Filter = "TXT Retina Palette (*.txt)|*.txt";
+            var result = dlg.ShowDialog();
+            if (result.Value)
+            {
+                string[] lines = File.ReadAllLines(dlg.FileName);
+                string[] charsToRemove = new string[] { ";", "," };
+                for (int i = 0; i < 128; i++)
+                {
+                    lines[i] = lines[i].Replace(",", string.Empty);
+                    lines[i] = lines[i].Replace(";", string.Empty);
+                    string[] tempValues = lines[i].Split(' ');
+                    colors.R[i] = int.Parse(tempValues[1]);
+                    colors.G[i] = int.Parse(tempValues[2]);
+                    colors.B[i] = int.Parse(tempValues[3]);
+                }
+            }
+            Velocity.SelectedIndex = 0;
+        }
+
+        private void CopyHex_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Clipboard.SetText(HexVal.Text);
         }
     }
 }

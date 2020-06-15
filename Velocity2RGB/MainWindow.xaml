@@ -5,18 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         x:Class="Velocity2RGB.Converter"
         mc:Ignorable="d"
-        Title="Velocity2RGB" Height="109" Width="317.667" ResizeMode="NoResize" WindowStartupLocation="Manual">
+        Title="Velocity2RGB" Height="110" Width="305" ResizeMode="NoResize" WindowStartupLocation="Manual">
     <Grid>
-        <Button Content="Open Palette" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
+        <Button x:Name="openPaletteButton" Content="Open Palette" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="75" Click="OpenPaletteButton_Click" Height="23"/>
         <ComboBox x:Name="Velocity" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" SelectionChanged="Velocity_SelectionChanged"/>
-        <Rectangle x:Name="ColorPreview" Fill="Black" HorizontalAlignment="Left" Height="47" Margin="90,10,0,0" VerticalAlignment="Top" Width="47" Stroke="Black"/>
-        <Label Content="R:" HorizontalAlignment="Left" Margin="147,6,0,0" VerticalAlignment="Top"/>
-        <Label Content="G:" HorizontalAlignment="Left" Margin="195,6,0,0" VerticalAlignment="Top"/>
-        <Label Content="B:" HorizontalAlignment="Left" Margin="243,6,0,0" VerticalAlignment="Top"/>
-        <Label Content="HEX:" HorizontalAlignment="Left" Margin="147,31,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="Rval" HorizontalAlignment="Left" Height="23" Margin="164,10,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="26" IsReadOnly="True"/>
-        <TextBox x:Name="Gval" HorizontalAlignment="Left" Height="23" Margin="212,10,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="26" IsReadOnly="True"/>
-        <TextBox x:Name="Bval" HorizontalAlignment="Left" Height="23" Margin="260,10,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="26" IsReadOnly="True"/>
-        <TextBox x:Name="HexVal" HorizontalAlignment="Left" Height="23" Margin="181,36,0,0" TextWrapping="Wrap" Text="#000000" VerticalAlignment="Top" Width="57" IsReadOnly="True"/>
+        <Rectangle x:Name="ColorPreview" Fill="Black" HorizontalAlignment="Left" Height="49" Margin="90,10,0,0" VerticalAlignment="Top" Width="49" Stroke="Black"/>
+        <Label Content="R:" HorizontalAlignment="Left" Margin="140,6,0,0" VerticalAlignment="Top"/>
+        <Label Content="G:" HorizontalAlignment="Left" Margin="188,6,0,0" VerticalAlignment="Top"/>
+        <Label Content="B:" HorizontalAlignment="Left" Margin="236,6,0,0" VerticalAlignment="Top"/>
+        <Label Content="HEX:" HorizontalAlignment="Left" Margin="140,31,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Rval" HorizontalAlignment="Left" Height="23" Margin="157,10,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="26" IsReadOnly="True"/>
+        <TextBox x:Name="Gval" HorizontalAlignment="Left" Height="23" Margin="205,10,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="26" IsReadOnly="True"/>
+        <TextBox x:Name="Bval" HorizontalAlignment="Left" Height="23" Margin="253,10,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="26" IsReadOnly="True"/>
+        <TextBox x:Name="HexVal" HorizontalAlignment="Left" Height="23" Margin="174,36,0,0" TextWrapping="Wrap" Text="#000000" VerticalAlignment="Top" Width="57" IsReadOnly="True"/>
+        <Button x:Name="copyHex" Content="Copy" HorizontalAlignment="Left" Margin="236,36,0,0" VerticalAlignment="Top" Width="43" Height="23" Click="CopyHex_Click"/>
     </Grid>
 </Window>
