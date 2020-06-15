@@ -4,6 +4,15 @@
              xmlns:local="clr-namespace:Velocity2RGB"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="Pad" TargetType="Button">
+            <Setter Property="Background" Value="Black"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Border CornerRadius="2.5" BorderThickness="0"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Application.Resources>
 </Application>
